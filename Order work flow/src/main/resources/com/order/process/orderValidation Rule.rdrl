@@ -1,0 +1,10 @@
+package com.order.process;
+
+import java.lang.Number;
+
+rule "orderValidation Rule"
+	dialect "mvel"
+	when
+		Order( jobType == "CEN" )
+	then
+end
